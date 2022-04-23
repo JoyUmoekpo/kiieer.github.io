@@ -1,12 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+/* logo font: https://www.fontspace.com/spongeboy-font-f45426 */
 @import "~bootstrap/dist/css/bootstrap.css";
+
 header {
     background-color: #ecfc9c;
     padding: 1%;
     text-align: center;
 }
 
-* {
-    color: #378aff;
-    background-color: #bad7ff;
+body {
+    font-family: sans-serif;
+    background: linear-gradient(90deg, #bad7ff calc(100% - 10px), #9cc4fc 0);
+    background-size: calc((100% - 5*5px)/6 + 5px) 100%;
+    background-position: 0 0, 50px 50px;
+    background-size: 100px 100px;
 }
