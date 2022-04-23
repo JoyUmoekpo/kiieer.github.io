@@ -15,3 +15,20 @@ body {
     background-position: 0 0, 50px 50px;
     background-size: 100px 100px;
 }
+
+#divhead {
+    background-color: #ecfc9c;
+    padding: 2%;
+    text-align: center;
+    color: #ffcc00;
+    border: none;
+    border-radius: none;
+}
+
+#text {
+    background-color: #fbffe4;
+    color: #c5cba1;
+    padding: 1%;
+    text-align: center;
+    height: 10%;
+}

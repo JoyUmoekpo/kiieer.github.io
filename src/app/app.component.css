@@ -4,3 +4,13 @@ nav {
     text-align: center;
     color: #bad7ff;
 }
+
+#divcon {
+    padding: 2%;
+    width: 70%;
+}
+
+ul, li {
+    display:inline-block;
+    font-size:  20px;
+}
