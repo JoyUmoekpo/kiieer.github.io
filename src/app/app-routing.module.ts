@@ -15,7 +15,7 @@ const routes:Routes=[
   {path: 'reservations', component: ReservationsComponent},
   {path: 'attractions', component: AttractionsComponent},
   {path: 'mailing-service', component: MailingServiceComponent},
-  { path: '**', redirectTo: '/home', pathMatch: 'full' },];
+  {path: '**', redirectTo: '/home', pathMatch: 'full' },];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
