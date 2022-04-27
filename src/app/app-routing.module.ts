@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { RoomserviceComponent } from './roomservice/roomservice.component';
 import { ReservationsComponent } from './reservations/reservations.component';
 import { AttractionsComponent } from './attractions/attractions.component';
+import { MailingServiceComponent } from './mailing-service/mailing-service.component';
 
 const routes:Routes=[
   {path:'login', component:LoginComponent},
@@ -13,6 +14,7 @@ const routes:Routes=[
   {path: 'roomservice', component: RoomserviceComponent},
   {path: 'reservations', component: ReservationsComponent},
   {path: 'attractions', component: AttractionsComponent},
+  {path: 'mailing-service', component: MailingServiceComponent},
   { path: '**', redirectTo: '/home', pathMatch: 'full' },];
 
 @NgModule({
