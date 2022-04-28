@@ -1,0 +1,30 @@
+/*image sources: 
+https://www.tripadvisor.com/Hotel_Review-g663501-d23184727-Reviews-Nickelodeon_Hotels_Resorts_Riviera_Maya-Playa_Paraiso_Playa_del_Carmen_Yucatan_Penins.html
+*/
+
+h2 {
+    text-shadow: 3px 1px #ffa700;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffe800;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 45%;
+    height: 50%;
+    flex: 33.33%;
+    padding: .1%;
+
+  }
+
+  .row {
+    display: flex;
+    line-height: 0;
+  }
+
+  #image {
+      border-radius: 20%;
+  }
+
