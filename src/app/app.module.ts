@@ -8,8 +8,11 @@ import { HomeComponent } from './home/home.component';
 import { RoomserviceComponent } from './roomservice/roomservice.component';
 import { ReservationsComponent } from './reservations/reservations.component';
 import { AttractionsComponent } from './attractions/attractions.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UserComponent } from './user/user.component';
+import { MaterialModule } from './material/material.module';
 import { MailinglistComponent } from './mailinglist/mailinglist.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -26,10 +29,14 @@ import { MailinglistComponent } from './mailinglist/mailinglist.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
-  bootstrap: [AppComponent],
+  entryComponents: [MailinglistComponent],
+  providers: [MailinglistComponent],  bootstrap: [AppComponent],
   schemas:  [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule { }
