@@ -10,6 +10,10 @@ import { ReservationsComponent } from './reservations/reservations.component';
 import { AttractionsComponent } from './attractions/attractions.component';
 import { MailingServiceComponent } from './mailing-service/mailing-service.component';
 import { UserComponent } from './user/user.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { CustomMaterialModule } from './material/material.module';
+
 
 @NgModule({
   declarations: [
@@ -19,14 +23,22 @@ import { UserComponent } from './user/user.component';
     RoomserviceComponent,
     ReservationsComponent,
     AttractionsComponent,
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
     MailingServiceComponent,
     UserComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    CustomMaterialModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  entryComponents:[MailingServiceComponent],
+  providers: [MailingServiceComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
