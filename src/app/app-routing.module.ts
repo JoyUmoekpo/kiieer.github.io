@@ -7,6 +7,7 @@ import { RoomserviceComponent } from './roomservice/roomservice.component';
 import { ReservationsComponent } from './reservations/reservations.component';
 import { AttractionsComponent } from './attractions/attractions.component';
 import { MailingServiceComponent } from './mailing-service/mailing-service.component';
+import { UserComponent } from './user/user.component';
 
 const routes:Routes=[
   {path:'login', component:LoginComponent},
@@ -15,7 +16,9 @@ const routes:Routes=[
   {path: 'reservations', component: ReservationsComponent},
   {path: 'attractions', component: AttractionsComponent},
   {path: 'mailing-service', component: MailingServiceComponent},
-  {path: '**', redirectTo: '/home', pathMatch: 'full' },];
+  {path: 'user', component: UserComponent},
+  {path: '**', redirectTo: '/home', pathMatch: 'full' },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
