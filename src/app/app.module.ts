@@ -9,6 +9,7 @@ import { RoomserviceComponent } from './roomservice/roomservice.component';
 import { ReservationsComponent } from './reservations/reservations.component';
 import { AttractionsComponent } from './attractions/attractions.component';
 import { MailingServiceComponent } from './mailing-service/mailing-service.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MailingServiceComponent } from './mailing-service/mailing-service.compo
     RoomserviceComponent,
     ReservationsComponent,
     AttractionsComponent,
-    MailingServiceComponent
+    MailingServiceComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
