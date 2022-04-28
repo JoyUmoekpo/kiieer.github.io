@@ -17,6 +17,7 @@ const routes:Routes=[
   {path: 'attractions', component: AttractionsComponent},
   {path: 'mailing-service', component: MailingServiceComponent},
   {path: 'user', component: UserComponent},
+  { path: '', component: UserComponent },
   {path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];
 
