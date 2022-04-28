@@ -1,5 +1,11 @@
-<div id="divhead" class="card"> {{title}}</div>
+<div id="divhead" class="card"><h2>{{title}}</h2></div>
 <div id="text">
-<p>login works! {{title}}
-</p>
+    <button class="register">New user?</button><br><br>
+    <form class="loginForm">
+        <label for="username">Username:</label><br>
+        <input type="text" required><br><br>
+        <label for="password">Password: </label><br>
+        <input type="password" required><br><br>
+        <button type="submit" id="loginbtn">Login</button>
+    </form>
 </div>
