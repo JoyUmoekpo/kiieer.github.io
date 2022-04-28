@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { RoomserviceComponent } from './roomservice/roomservice.component';
 import { ReservationsComponent } from './reservations/reservations.component';
 import { AttractionsComponent } from './attractions/attractions.component';
+import { UserComponent } from './user/user.component';
+import { MailinglistComponent } from './mailinglist/mailinglist.component';
 
 
 
@@ -18,7 +20,9 @@ import { AttractionsComponent } from './attractions/attractions.component';
     HomeComponent,
     RoomserviceComponent,
     ReservationsComponent,
-    AttractionsComponent
+    AttractionsComponent,
+    UserComponent,
+    MailinglistComponent,
   ],
   imports: [
     BrowserModule,
