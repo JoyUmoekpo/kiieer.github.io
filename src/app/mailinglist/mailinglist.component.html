@@ -7,7 +7,7 @@
         <form>
             <div class="mailinglist-form-field">
                 <mat-form-field class="mailinglist-input">
-                    <mat-label>Email</mat-label>
+                    <mat-label for="email">Email</mat-label>
                     <input matInput [formControl]="mailinglistForm">
                     <mat-error *ngIf="mailinglistForm.hasError('email') && !mailinglistForm.hasError('required')">
                         Please enter a valid email address
