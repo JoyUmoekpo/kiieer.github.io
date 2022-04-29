@@ -35,5 +35,18 @@ h2 {
 
 input {
     border: none;
-
+    color: #b59c64;
 }
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #dfe3c5;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #dfe3c5;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #dfe3c5;
+  }
