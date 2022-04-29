@@ -7,6 +7,7 @@ import { RoomserviceComponent } from './roomservice/roomservice.component';
 import { ReservationsComponent } from './reservations/reservations.component';
 import { AttractionsComponent } from './attractions/attractions.component';
 import { UserComponent } from './user/user.component';
+import { MailinglistComponent } from './mailinglist/mailinglist.component';
 
 const routes:Routes=[
   {path:'login', component:LoginComponent},
@@ -14,6 +15,7 @@ const routes:Routes=[
   {path: 'roomservice', component: RoomserviceComponent},
   {path: 'reservations', component: ReservationsComponent},
   {path: 'attractions', component: AttractionsComponent},
+  {path: 'mailinglist', component: MailinglistComponent},
   {path: '**', redirectTo: '/home', pathMatch: 'full' },
   { path: 'user', component: UserComponent },
   { path: '', component: UserComponent }
