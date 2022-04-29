@@ -1,6 +1,86 @@
-.modal-mailinglist {color: #999;font-size: 15px; display: flex;flex-direction: column; text-align: center}
+/* .modal-mailinglist {color: #999;font-size: 15px; display: flex;flex-direction: column; text-align: center}
 .modal-mailinglist h4 {color: #000;font-size: 30px;margin: 0;font-weight: bold;text-align: center}
 .icon-box {font-size:80px;z-index: 9;text-align: center;margin: 10px 0;}
 .hint-text {margin: 100px auto;text-align: center;}
 .mailinglist-form-field {display: flex; flex-direction: row;justify-content: space-evenly}
-.mailinglist-input {flex-basis: 40%}
+.mailinglist-input {flex-basis: 40%} */
+
+.button {
+    color: #fcffa4;
+    background-color: #9cc4fc
+}
+
+.modal-mailinglist {
+    padding: 20px;
+    background: #fcffa4;
+    border-radius: 25px;
+    
+  /* margin exposes part of the modal background */
+    margin: 80px;
+  /* modal container fixed across whole screen */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+  /* z-index must be higher than .jw-modal-background */
+    z-index: 1000;
+}
+
+.modal-mailinglist h4 {
+    margin: 40px;
+    padding: 60px;
+    color: #fcffa4;
+    background: #9cc4fc;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.icon-box {
+    font-size: 80px;
+    z-index: 9;
+    text-align: center;
+    margin: 40px 0;
+    
+    /* modal background fixed across whole screen */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.hint-text {
+    margin: 100px auto;
+    text-align: center;
+}
+
+.mailinglist-form-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.mailinglist-input {
+    flex-basis: 50%;
+    background-color: gray;
+    height: 20px;
+}
+
+.title {
+    color:#fcffa4
+}
+
+p {
+    color: #fcffa4;
+    background: #9cc4fc;
+    border-radius: 25px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
