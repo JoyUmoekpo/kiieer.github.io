@@ -1,9 +1,9 @@
 <div class="modal-mailinglist">
-    <h4 mat-dialog-title>Subscribe to Our Monthly Mailing List</h4>
-
+    <h4 mat-dialog-title class="title">Subscribe to Our Monthly Mailing List</h4>
     <div mat-dialog-content>
-        <mat-icon color="warn" class="icon-box"></mat-icon>
-        <p>Join our subscriber's list to get the latest updates and articles delivered directly in your inbox.</p>
+        <!-- <mat-icon color="warn" class="icon-box"></mat-icon> -->
+        <p>Join our subscriber's list to get the latest updates and articles delivered directly in your inbox. Please put your email in the box below.
+        </p>
         <form>
             <div class="mailinglist-form-field">
                 <mat-form-field class="mailinglist-input">
@@ -15,7 +15,7 @@
                         Email is <strong>required</strong>
                     </mat-error>
                 </mat-form-field>
-                <button mat-raised-button color="primary" mat-dialog-close (click)="subscribe()"
+                <button mat-raised-button class="button" mat-dialog-close (click)="subscribe()"
                     [disabled]="!mailinglistForm.valid">Subscribe</button>
             </div>
         </form>
