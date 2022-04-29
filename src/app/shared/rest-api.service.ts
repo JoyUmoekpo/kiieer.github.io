@@ -43,15 +43,11 @@ export class RestApiService {
       .pipe(retry(1), catchError(this.handleError));
   }
   // HttpClient API put() method => Update employee
-  // updateEmployee(id: any, employee: any): Observable<Employee> {
-  //   return this.http
-  //     .put<Employee>(
-  //       this.apiURL + '/employees/' + id,
-  //       JSON.stringify(employee),
-  //       this.httpOptions
-  //     )
-  //     .pipe(retry(1), catchError(this.handleError));
-  // }
+    loginUser(username: any, password: any): Observable<Users> {
+      return this.http
+          .get<Users>(this.apiURL + '/employees/' + username + '/' + password)
+          .pipe(retry(1), catchError(this.handleError));
+    }
   // // HttpClient API delete() method => Delete employee
   // deleteEmployee(id: any) {
   //   return this.http

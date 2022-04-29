@@ -14,6 +14,8 @@ import { MaterialModule } from './material/material.module';
 import { MailinglistComponent } from './mailinglist/mailinglist.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RegistrationComponent } from './registration/registration.component';
+import { LogoutComponent } from './logout/logout.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { RegistrationComponent } from './registration/registration.component';
     UserComponent,
     MailinglistComponent,
     RegistrationComponent,
+    LogoutComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
