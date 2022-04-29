@@ -26,23 +26,23 @@ export class RestApiService {
   //     .get<Employee>(this.apiURL + '/employees')
   //     .pipe(retry(1), catchError(this.handleError));
   // }
-  // // HttpClient API get() method => Fetch employee
+  // HttpClient API get() method => Fetch employee
   // getEmployee(id: any): Observable<Employee> {
   //   return this.http
   //     .get<Employee>(this.apiURL + '/employees/' + id)
   //     .pipe(retry(1), catchError(this.handleError));
   // }
-  // // HttpClient API post() method => Create employee
-  // createEmployee(employee: any): Observable<Employee> {
-  //   return this.http
-  //     .post<Employee>(
-  //       this.apiURL + '/employees',
-  //       JSON.stringify(employee),
-  //       this.httpOptions
-  //     )
-  //     .pipe(retry(1), catchError(this.handleError));
-  // }
-  // // HttpClient API put() method => Update employee
+  // HttpClient API post() method => Create employee
+  createUser(user: any): Observable<Users> {
+    return this.http
+      .post<Users>(
+        this.apiURL + '/user',
+        JSON.stringify(user),
+        this.httpOptions
+      )
+      .pipe(retry(1), catchError(this.handleError));
+  }
+  // HttpClient API put() method => Update employee
   // updateEmployee(id: any, employee: any): Observable<Employee> {
   //   return this.http
   //     .put<Employee>(

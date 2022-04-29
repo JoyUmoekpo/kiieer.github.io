@@ -1,0 +1,39 @@
+.registerForm {
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding-left: 1%;
+}
+
+.register {
+    float: right;
+}
+
+#registerbtn {
+    margin: 0 auto;
+    display: block;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+button {
+    background-color: #ecfc9c;
+    border: none;
+    color: #ffaa00;
+    border-radius: 25px;
+    padding: 1%;
+}
+
+h2 {
+    text-shadow: 3px 1px #ffa700;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffe800;
+}
+
+input {
+    border: none;
+
+}

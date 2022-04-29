@@ -13,6 +13,7 @@ import { UserComponent } from './user/user.component';
 import { MaterialModule } from './material/material.module';
 import { MailinglistComponent } from './mailinglist/mailinglist.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RegistrationComponent } from './registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { HttpClientModule } from '@angular/common/http';
     AttractionsComponent,
     UserComponent,
     MailinglistComponent,
+    RegistrationComponent,
   ],
   imports: [
     BrowserModule,
