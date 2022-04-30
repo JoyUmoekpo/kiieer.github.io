@@ -1,16 +1,18 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { RestApiService } from '../shared/rest-api.service';
+import { Users } from './users';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthenticationService {
-
-  constructor() { }
+  users: Users[] = [];
+  constructor(public restApi: RestApiService) { }
 
   authenticate(username: string, password: string) {
-    if (username === "user" && password === "codeusingjava") {
+    this.restApi.loginUser(username, password).subscribe(data => this.users = data);
+    if (this.users.length > 0) {
       sessionStorage.setItem('username', username)
       return true;
     } else {

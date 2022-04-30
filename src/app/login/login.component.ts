@@ -11,7 +11,7 @@ import { RestApiService } from '../shared/rest-api.service';
 export class LoginComponent implements OnInit {
   title="Login"
 
-  username = 'user'
+  username = ''
   password = ''
   invalidLogin = false
   @Input() userDetails = {username: '', password: ''};
