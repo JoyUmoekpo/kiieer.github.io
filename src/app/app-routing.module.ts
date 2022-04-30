@@ -7,14 +7,19 @@ import { RoomserviceComponent } from './roomservice/roomservice.component';
 import { ReservationsComponent } from './reservations/reservations.component';
 import { AttractionsComponent } from './attractions/attractions.component';
 import { UserComponent } from './user/user.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { AuthGuardService } from './shared/auth-guard.service';
+import { LogoutComponent } from './logout/logout.component';
 import { MailinglistComponent } from './mailinglist/mailinglist.component';
 
 const routes:Routes=[
   {path:'login', component:LoginComponent},
   {path: 'home', component: HomeComponent},
   {path: 'roomservice', component: RoomserviceComponent},
-  {path: 'reservations', component: ReservationsComponent},
+  { path: 'logout', component: LogoutComponent, canActivate:[AuthGuardService]},
+  {path: 'reservations', component: ReservationsComponent, canActivate:[AuthGuardService]},
   {path: 'attractions', component: AttractionsComponent},
+  {path: 'register', component: RegistrationComponent},
   {path: 'mailinglist', component: MailinglistComponent},
   {path: '**', redirectTo: '/home', pathMatch: 'full' },
   { path: 'user', component: UserComponent },

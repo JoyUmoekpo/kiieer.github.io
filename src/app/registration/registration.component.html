@@ -1,0 +1,17 @@
+<div id="divhead" class="card"><h2>{{title}}</h2></div>
+<div id="text">
+          <div class="registerForm">
+            <label for="username">First name:</label><br>
+            <input type="text" [(ngModel)]="userDetails.firstName" placeholder="input your first name.."><br>
+            <label for="username">Last name:</label><br>
+            <input type="text" [(ngModel)]="userDetails.lastName"  placeholder="input your last name.."><br>
+            <label for="username">Email:</label><br>
+            <input type="text" [(ngModel)]="userDetails.email" placeholder="input your email.."><br>
+            <label for="username">Phone number:</label><br>
+            <input type="text" [(ngModel)]="userDetails.phoneNumber"  placeholder="input your phone number.."><br>
+            <label for="username">Username:</label><br>
+            <input type="text" [(ngModel)]="userDetails.username"  placeholder="input your username.."><br>
+            <label for="username">Password:</label><br>
+            <input type="password" [(ngModel)]="userDetails.password" placeholder="input your password.."><br><br>
+            <button id="registerbtn" (click)="addUser(userDetails)">Create My Account</button>
+</div>

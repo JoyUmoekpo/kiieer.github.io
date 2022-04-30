@@ -1,0 +1,21 @@
+h2 {
+    text-shadow: 3px 1px #ffa700;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffe800;
+}
+
+button {
+    background-color: #ecfc9c;
+    border: none;
+    color: #ffaa00;
+    border-radius: 25px;
+    padding: 1%;
+}
+
+#image {
+    display: inline-block;
+    background-image: url(https://i.imgur.com/yjFNhyB.png);
+    padding: 5%;
+    width: 100%;
+}
