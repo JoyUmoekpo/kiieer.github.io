@@ -1,15 +1,6 @@
 <div id="divhead" class="card"><h2>{{title}}</h2></div>
 <div id="text"><div id="image"></div>
-<form class="loginForm">
  <label for="CIdate">Duration of stay:</label> <br>
- <input type="date" required> <label for="COdate">&nbsp; to &nbsp;</label> <input type="date" required><br><br>
-    <label for="roomtype">Type of room: </label><br>
-    <select name="roomtypes" id="rooms">
-        <option value="Master">Master</option>
-        <option value="Single">Single</option>
-        <option value="Double">Double</option>
-      </select><br><br>
-    <button type="submit" id="reservebtn">Reserve</button>
-</form>
-
+ <input type="date" [(ngModel)]="reservDetails.checkinDate" required> <label for="COdate">&nbsp; to &nbsp;</label> <input type="date" [(ngModel)]="reservDetails.checkoutDate" required><br><br>
+    <button (click)="addReservation(reservDetails)" id="reservebtn">Reserve</button>
 </div>
