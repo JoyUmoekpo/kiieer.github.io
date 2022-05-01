@@ -8,13 +8,17 @@ import { Users } from './users';
 })
 export class AuthenticationService {
   users: Users[] = [];
+  userId: string = "";
   constructor(public restApi: RestApiService) { }
 
   authenticate(username: string, password: string) {
     this.restApi.loginUser(username, password).subscribe(data => this.users = data);
     if (this.users.length > 0) {
       sessionStorage.setItem('username', username)
+      this.restApi.getId(username, password).subscribe(val => this.userId = val);
+      sessionStorage.setItem('id', this.userId)
       return true;
+      
     } else {
       return false;
     }
@@ -22,13 +26,12 @@ export class AuthenticationService {
 
   isUserLoggedIn() {
     let user = sessionStorage.getItem('username')
-    console.log(!(user === null))
     return !(user === null)
   }
 
   logOut() {
-    console.log("loggin out")
     sessionStorage.removeItem('username')
+    sessionStorage.removeItem('id')
   }
 
 }

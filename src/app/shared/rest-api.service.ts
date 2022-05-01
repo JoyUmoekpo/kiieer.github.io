@@ -4,6 +4,7 @@ import { Users } from '../shared/users';
 import { Reservations } from '../shared/reservations';
 import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
+import { Variable } from '@angular/compiler/src/render3/r3_ast';
 @Injectable({
   providedIn: 'root',
 })
@@ -49,6 +50,17 @@ export class RestApiService {
           .pipe(retry(1), catchError(this.handleError));
         return array;
     }
+
+    getId(username: any, password: any): Observable<string>{
+      let url = this.apiURL + '/id/' + username + '/' + password;
+      var array = this.http
+          .get(url, {responseType: 'text'})
+          .pipe(retry(1), catchError(this.handleError));
+          return array;
+    }
+
+
+
   // // HttpClient API delete() method => Delete employee
   // deleteEmployee(id: any) {
   //   return this.http
