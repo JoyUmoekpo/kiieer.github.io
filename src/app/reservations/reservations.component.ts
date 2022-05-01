@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
+import { RestApiService } from '../shared/rest-api.service';
 
 @Component({
   selector: 'app-reservations',
@@ -6,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./reservations.component.css']
 })
 export class ReservationsComponent implements OnInit {
-  title = "Reservations";
-  constructor() { }
+  title = "Creating Reservation...";
+  @Input() reservDetails = {checkinDate: '', checkoutDate: ''};
+  constructor(public restApi: RestApiService, public router: Router) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
+  addReservation(dataReservation: any) {
+    this.restApi.createReservation(this.reservDetails).subscribe((data: {}) => {
+      this.router.navigate(['/myreservations']);
+
+    });
+  }
 }

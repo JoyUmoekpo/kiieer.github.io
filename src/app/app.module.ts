@@ -16,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RegistrationComponent } from './registration/registration.component';
 import { LogoutComponent } from './logout/logout.component';
 import { HeaderComponent } from './header/header.component';
+import { MyreservationsComponent } from './myreservations/myreservations.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { HeaderComponent } from './header/header.component';
     RegistrationComponent,
     LogoutComponent,
     HeaderComponent,
+    MyreservationsComponent,
   ],
   imports: [
     BrowserModule,

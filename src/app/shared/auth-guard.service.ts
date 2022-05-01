@@ -12,10 +12,10 @@ import { Injectable } from '@angular/core';
   
     canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
       if (this.authService.isUserLoggedIn()) {
-        console.log("hi")
         return true; 
       }  else {
-      this.router.navigate(['login']);
+        sessionStorage.removeItem('username')
+        sessionStorage.removeItem('id')
       return false;
     }
     }

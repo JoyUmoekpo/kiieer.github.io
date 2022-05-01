@@ -1,0 +1,31 @@
+<div id="divhead" class="card"><h2>{{title}}</h2></div>
+<div id="text">
+    <button class="register" routerLink="/reservations" routerLinkActive="active">Create New Reservation</button>
+  <hr>
+    <div class="no-data text-center" *ngIf="Reservations.length == 0">
+        <p>There are no reservations yet!</p>
+      </div>
+      
+      <div *ngIf="Reservations.length !== 0">
+        <h3 class="mb-3 text-center">My Reservations</h3>
+        <div class="col-md-12">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Check in date</th>
+                <th scope="col">Check out date</th>
+                <th scope="col">Room Number</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let reservations of Reservations">
+                <td>{{ reservations.checkinDate }}</td>
+                <td>{{ reservations.checkoutDate }}</td>
+                <td>{{ reservations.reservationNo }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+</div>

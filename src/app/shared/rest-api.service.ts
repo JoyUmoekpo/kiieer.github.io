@@ -4,6 +4,8 @@ import { Users } from '../shared/users';
 import { Reservations } from '../shared/reservations';
 import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
+import { Variable } from '@angular/compiler/src/render3/r3_ast';
+import { FilterReservations } from './filterreservations';
 @Injectable({
   providedIn: 'root',
 })
@@ -49,6 +51,34 @@ export class RestApiService {
           .pipe(retry(1), catchError(this.handleError));
         return array;
     }
+
+    getId(username: any, password: any): Observable<string>{
+      let url = this.apiURL + '/id/' + username + '/' + password;
+      var array = this.http
+          .get(url, {responseType: 'text'})
+          .pipe(retry(1), catchError(this.handleError));
+          return array;
+    }
+
+    getReservations(): Observable<FilterReservations> {
+      let Uid = sessionStorage.getItem('id');
+      console.log(Uid);
+    return this.http
+      .get<FilterReservations>(this.apiURL + '/reserve/' + Uid)
+      .pipe(retry(1), catchError(this.handleError));
+  }
+
+  createReservation(reservation: any): Observable<Reservations> {
+    let Uid = sessionStorage.getItem('id')
+    return this.http
+      .post<Reservations>(
+        this.apiURL + '/post/' + Uid + '/reserve',
+        JSON.stringify(reservation),
+        this.httpOptions
+      )
+      .pipe(retry(1), catchError(this.handleError));
+  }
+
   // // HttpClient API delete() method => Delete employee
   // deleteEmployee(id: any) {
   //   return this.http
@@ -56,6 +86,8 @@ export class RestApiService {
   //     .pipe(retry(1), catchError(this.handleError));
   // }
   // Error handling
+
+  
   handleError(error: any) {
     let errorMessage = '';
     if (error.error instanceof ErrorEvent) {

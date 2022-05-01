@@ -11,11 +11,13 @@ import { RegistrationComponent } from './registration/registration.component';
 import { AuthGuardService } from './shared/auth-guard.service';
 import { LogoutComponent } from './logout/logout.component';
 import { MailinglistComponent } from './mailinglist/mailinglist.component';
+import { MyreservationsComponent } from './myreservations/myreservations.component';
 
 const routes:Routes=[
   {path:'login', component:LoginComponent},
   {path: 'home', component: HomeComponent},
   {path: 'roomservice', component: RoomserviceComponent},
+  {path: 'myreservations', component: MyreservationsComponent},
   { path: 'logout', component: LogoutComponent, canActivate:[AuthGuardService]},
   {path: 'reservations', component: ReservationsComponent, canActivate:[AuthGuardService]},
   {path: 'attractions', component: AttractionsComponent},

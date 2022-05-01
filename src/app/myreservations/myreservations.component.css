@@ -1,0 +1,35 @@
+button {
+    background-color: #ecfc9c;
+    border: none;
+    color: #ffaa00;
+    border-radius: 25px;
+    padding: 1%;
+}
+
+h2 {
+    text-shadow: 3px 1px #ffa700;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffe800;
+}
+
+button:hover {
+    background-color: #ffde5a;
+  }
+
+  
+table {
+    background-color: #fbffe4;
+    color: #dcb86a;
+    padding: 1%;
+    text-align: center;
+    border: none;
+}
+
+th {
+    background-color: #ecfc9c;
+    text-shadow: 1px 1px #ffa700;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffe800;
+}
