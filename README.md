@@ -1,4 +1,4 @@
-<img src=https://i.imgur.com/fo25DJ7.png>
+<img src=https://i.imgur.com/DLYuCW9.png>
 
 # Bikini Bottom
 
