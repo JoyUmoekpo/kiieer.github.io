@@ -49,7 +49,7 @@ Below are the features successfully implemented in this website. We will continu
 * Login with new credentials.
 * Create a new reservation including check-in and check-out dates.
 * Log out.
-* 
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
