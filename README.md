@@ -49,6 +49,7 @@ Below are the features successfully implemented in this website. We will continu
 * Login with new credentials.
 * Create a new reservation including check-in and check-out dates.
 * Log out.
+* 
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
@@ -58,5 +59,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
 ## Further help
-
+All of the back end functionality can be referenced from this [repository]([kiieer/ProjectTwoBackend)
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## License
