@@ -38,7 +38,7 @@ Below are the features successfully implemented in this website. We will continu
 * Clone local repository using ``git clone <URL>`` and press enter.
 * Open this cloned repository from the directory in Visual Studio Code.
 * In VS Code terminal, run the command ``npm install``.
-* Run `ng serve -o` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+* Run `ng serve -o` for a dev server. Navigate to this [link](http://localhost:4200/). The application will automatically reload if you change any of the source files.
 
 ### Usage
 * Run ProjectRestApplication as a Java Application.
