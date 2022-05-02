@@ -1,3 +1,5 @@
+<img src=https://i.imgur.com/fo25DJ7.png>
+
 # Bikini Bottom
 
 ## Project Description
