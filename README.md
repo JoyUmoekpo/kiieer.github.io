@@ -1,7 +1,7 @@
 # Bikini Bottom
 
 ## Project Description
-We were given the opportunity to develop our own project requirements. Our team decided Are you ready to stay at our SpongeBob themed hotel? Each room is designed to match your favorite SpongeBob character. We have room service, daily themed events, and plenty of restaurants for you to wine and dine!
+We were given the opportunity to develop our own project requirements. Our team decided to create a hotel website that requires users, reservations, and a variety of sign up options. We have room service, daily themed events, and plenty of restaurants for you to wine and dine. For this project, we used Angular for front end development and Java with Spring Boot for the back end functionality. 
 
 ## Technologies Used
   * This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
@@ -17,12 +17,14 @@ Below are the features successfully implemented in this website. We will continu
   1. User can register with name, email, username, password, and phone number.
   2. User can login and logout of the homepage.
   3. User can preview and update his or her reservations.
+  4. User can create new password based upon email.
 
 ### To Do List
   1. User can recover password.
   2. User can sign up for daily events.
   3. User can order room service.
   4. User can subscribe to mailing list.
+  5. User can update/delete existing reservations.
 
 ## Getting Started
 
@@ -37,7 +39,9 @@ Below are the features successfully implemented in this website. We will continu
 * Run `ng serve -o` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ### Usage
-* Run ProjectRestApplication
+* Run ProjectRestApplication as a Java Application.
+* SPring Boot should open [this link](https://localhost:8081/)
+* 
 ### Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
