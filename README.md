@@ -29,9 +29,15 @@ Below are the features successfully implemented in this website. We will continu
 ### Development server
 * Open GitHub.
 * Go to repository page and copy the following code: [kiieer/kiieer.github.io](https://github.com/kiieer/kiieer.github.io).
-* Copy the above code into GitBash terminal.
-* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+* Copy the above URL into GitBash terminal.
+* Access working directory using command ``-cd <directory-name>``.
+* Clone local repository using ``git clone <URL>`` and press enter.
+* Open this cloned repository from the directory in Visual Studio Code.
+* In VS Code terminal, run the command ``npm install``.
+* Run `ng serve -o` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
+### Usage
+* Run ProjectRestApplication
 ### Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
