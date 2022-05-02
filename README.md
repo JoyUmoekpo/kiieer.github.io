@@ -29,7 +29,7 @@ Below are the features successfully implemented in this website. We will continu
 ### Development server
 * Open GitHub.
 * Go to repository page [kiieer/kiieer.github.io](https://github.com/kiieer/kiieer.github.io).
-* Select 
+* Select code button and copy link.
 * Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ### Code scaffolding
