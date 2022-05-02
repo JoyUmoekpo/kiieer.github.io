@@ -42,16 +42,13 @@ Below are the features successfully implemented in this website. We will continu
 
 ### Usage
 * Run ProjectRestApplication as a Java Application.
-* Spring Boot should open [this link](https://localhost:8081/)
-* 
-### Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-### Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
+* Spring Boot should open [this link](https://localhost:8081/).
+* Access the homepage from [here](http://localhost:4200/home).
+* Register a new user with required information.
+* Navigate back to the login page.
+* Login with new credentials.
+* Create a new reservation including check-in and check-out dates.
+* Log out.
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
