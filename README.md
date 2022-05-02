@@ -40,7 +40,7 @@ Below are the features successfully implemented in this website. We will continu
 
 ### Usage
 * Run ProjectRestApplication as a Java Application.
-* SPring Boot should open [this link](https://localhost:8081/)
+* Spring Boot should open [this link](https://localhost:8081/)
 * 
 ### Code scaffolding
 
