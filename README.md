@@ -49,6 +49,7 @@ Below are the features successfully implemented in this website. We will continu
 * Navigate back to the login page.
 * Login with new credentials.
 * Create a new reservation including check-in and check-out dates.
+* * Verify that the reservations table has updated with the new information.
 * Log out.
 
 ### Running unit tests
@@ -64,3 +65,5 @@ All of the back end functionality can be referenced from this [repository](https
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 ## License
+License
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
